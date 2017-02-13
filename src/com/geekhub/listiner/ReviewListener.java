@@ -12,8 +12,8 @@ public class ReviewListener implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
-        ReviewRepository repository = new ReviewRepository();
         ServletContext context = servletContextEvent.getServletContext();
+        ReviewRepository repository = new ReviewRepository();
         context.setAttribute("repository", repository);
     }
 

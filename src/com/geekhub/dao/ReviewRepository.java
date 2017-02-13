@@ -9,11 +9,7 @@ import java.util.List;
 
 public class ReviewRepository {
 
-    private Connection connection;
-
-    public ReviewRepository() {
-        connection = DbUtil.getConnection();
-    }
+    private Connection connection = new DbUtil().getConnection();;
 
     public void addReview(Review review) {
         String sql = "INSERT INTO reviews VALUES (DEFAULT, ?, ?, ?, DEFAULT)";

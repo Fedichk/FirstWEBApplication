@@ -1,33 +1,33 @@
 package com.geekhub.util;
 
+import org.apache.commons.dbcp.BasicDataSource;
+
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
 public class DbUtil {
 
-    private static Connection connection = null;
+    private Connection connection;
 
-    public static Connection getConnection() {
-        if (connection != null) {
-            return connection;
-        } else {
-            try {
-                Properties properties = new Properties();
-                properties.load(DbUtil.class.getClassLoader()
-                        .getResourceAsStream("/db.properties"));
-                String driver = properties.getProperty("driver");
-                String url = properties.getProperty("url");
-                String user = properties.getProperty("user");
-                String password = properties.getProperty("password");
-                Class.forName(driver);
-                connection = DriverManager.getConnection(url, user, password);
-            } catch (IOException | SQLException | ClassNotFoundException e) {
-                e.printStackTrace();
-            }
+    public DbUtil() {
+        BasicDataSource dataSource = new BasicDataSource();
+        Properties properties = new Properties();
+        try {
+            properties.load(new FileInputStream("/db.properties"));
+            dataSource.setDriverClassName(properties.getProperty("driver"));
+            dataSource.setUrl(properties.getProperty("url"));
+            dataSource.setUsername(properties.getProperty("user"));
+            dataSource.setPassword(properties.getProperty("password"));
+            this.connection = dataSource.getConnection();
+        } catch (IOException | SQLException e) {
+            e.printStackTrace();
         }
+    }
+
+    public Connection getConnection(){
         return connection;
     }
 }
