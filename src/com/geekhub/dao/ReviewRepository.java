@@ -30,13 +30,13 @@ public class ReviewRepository {
 
     public List<Review> getAllReviews() {
         List<Review> reviews = new ArrayList<>();
-        String sql = "SELECT 'date', 'name', 'grade' FROM reviews";
+        String sql = "SELECT `date`, `name`, `grade` FROM reviews";
         try {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
-            while (resultSet.next()){
+            while (resultSet.next()) {
                 Review review = new Review();
-                review.setDate(resultSet.getDate("date"));
+                review.setDate(resultSet.getDate("date").toLocalDate());
                 review.setAuthorName(resultSet.getString("name"));
                 review.setGrade(resultSet.getInt("grade"));
                 reviews.add(review);

@@ -13,10 +13,15 @@ import java.util.List;
 
 @WebServlet("/allreviews")
 public class AllReviewsController extends HttpServlet {
+    private ReviewRepository repository;
+
+    @Override
+    public void init() throws ServletException {
+        repository = (ReviewRepository) getServletContext().getAttribute("repository");
+    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        ReviewRepository repository = new ReviewRepository();
         List<Review> reviews = repository.getAllReviews();
         req.setAttribute("reviews", reviews);
         req.getRequestDispatcher("viewall.jsp").forward(req, resp);

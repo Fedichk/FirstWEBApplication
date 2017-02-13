@@ -1,9 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+<head>
     <title>Create review</title>
-  </head>
-  <body>
-  <a href="newreview.jsp">Create a review</a>
-  </body>
+</head>
+<body>
+<a href="newreview.jsp">Create a review</a>
+</body>
 </html>

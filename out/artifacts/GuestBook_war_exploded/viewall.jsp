@@ -6,23 +6,23 @@
     <title>All reviews</title>
 </head>
 <body>
-  <table border="1">
-      <thead>
-      <tr>
-          <th>Date</th>
-          <th>Name</th>
-          <th>Review</th>
-      </tr>
-      </thead>
-      <tbody>
-      <c:forEach items="${reviews}" var="review">
-          <tr>
-              <td><c:out value="${review.date}"/></td>
-              <td><fmt:formatDate pattern="yyyy-MMM-dd" value="${review.authorName}"/></td>
-              <td><c:out value="${review.text}"/></td>
-          </tr>
-      </c:forEach>
-      </tbody>
-  </table>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Date</th>
+        <th>Name</th>
+        <th>Review</th>
+    </tr>
+    </thead>
+    <tbody>
+    <c:forEach items="${reviews}" var="review">
+        <tr>
+            <td><c:out value="${review.date}"/></td>
+            <td><c:out value="${review.authorName}"/></td>
+            <td><c:out value="${review.grade}"/></td>
+        </tr>
+    </c:forEach>
+    </tbody>
+</table>
 </body>
 </html>
