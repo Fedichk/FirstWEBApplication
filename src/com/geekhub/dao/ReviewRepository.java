@@ -1,7 +1,7 @@
 package com.geekhub.dao;
 
 import com.geekhub.model.Review;
-import com.geekhub.util.DbUtil;
+import com.geekhub.util.DataSource;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -9,17 +9,16 @@ import java.util.List;
 
 public class ReviewRepository {
 
-    private DbUtil dbUtil;
-    private Connection connection = dbUtil.getConnection();
+    private DataSource dataSource;
 
-    public ReviewRepository(DbUtil dbUtil){
-        this.dbUtil = dbUtil;
+    public ReviewRepository(DataSource dataSource){
+        this.dataSource = dataSource;
     }
 
     public void addReview(Review review) {
         String sql = "INSERT INTO reviews VALUES (DEFAULT, ?, ?, ?, DEFAULT)";
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            PreparedStatement preparedStatement = dataSource.getConnection().prepareStatement(sql);
             preparedStatement.setString(1, review.getAuthorName());
             preparedStatement.setString(2, review.getText());
             preparedStatement.setInt(3, review.getGrade());
@@ -33,7 +32,7 @@ public class ReviewRepository {
         List<Review> reviews = new ArrayList<>();
         String sql = "SELECT `date`, `name`, `grade` FROM reviews";
         try {
-            Statement statement = connection.createStatement();
+            Statement statement = dataSource.getConnection().createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
             while (resultSet.next()) {
                 Review review = new Review();
