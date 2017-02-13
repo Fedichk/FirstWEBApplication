@@ -12,6 +12,7 @@ import java.io.IOException;
 
 @WebServlet("/newreview")
 public class NewReviewController extends HttpServlet {
+
     private ReviewRepository repository;
 
     @Override

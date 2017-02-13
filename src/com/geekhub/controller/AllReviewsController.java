@@ -13,6 +13,7 @@ import java.util.List;
 
 @WebServlet("/allreviews")
 public class AllReviewsController extends HttpServlet {
+
     private ReviewRepository repository;
 
     @Override
