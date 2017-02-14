@@ -1,28 +1,35 @@
 package com.geekhub.listiner;
 
 import com.geekhub.dao.ReviewRepository;
+import org.apache.commons.dbcp.BasicDataSource;
 
-import javax.naming.Context;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
-import javax.sql.DataSource;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
 
 @WebListener
 public class ReviewListener implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
-        DataSource dataSource = null;
+        Properties properties = new Properties();
+        BasicDataSource dataSource = new BasicDataSource();
         try {
-            Context ctx = new InitialContext();
-            dataSource = (DataSource) ctx.lookup("java:comp/env/jdbc/reviews");
-        } catch (NamingException e) {
+            InputStream inputStream = getClass().getClassLoader().getResourceAsStream("/db.properties");
+            properties.load(inputStream);
+            dataSource.setDriverClassName(properties.getProperty("driver"));
+            dataSource.setUrl(properties.getProperty("url"));
+            dataSource.setUsername(properties.getProperty("user"));
+            dataSource.setPassword(properties.getProperty("password"));
+        } catch (IOException e) {
             e.printStackTrace();
+            throw new RuntimeException("Comment", e);
         }
+
         ReviewRepository repository = new ReviewRepository(dataSource);
         ServletContext context = servletContextEvent.getServletContext();
         context.setAttribute("repository", repository);

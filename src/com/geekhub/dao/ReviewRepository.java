@@ -1,17 +1,20 @@
 package com.geekhub.dao;
 
 import com.geekhub.model.Review;
+import org.apache.commons.dbcp.BasicDataSource;
 
-import javax.sql.DataSource;
-import java.sql.*;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ReviewRepository {
 
-    private DataSource dataSource;
+    private BasicDataSource dataSource;
 
-    public ReviewRepository(DataSource dataSource){
+    public ReviewRepository(BasicDataSource dataSource){
         this.dataSource = dataSource;
     }
 
