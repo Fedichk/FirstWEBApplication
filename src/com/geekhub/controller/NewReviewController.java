@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.SQLException;
 
 @WebServlet("/newreview")
 public class NewReviewController extends HttpServlet {
@@ -25,7 +26,12 @@ public class NewReviewController extends HttpServlet {
         review.setAuthorName(req.getParameter("name"));
         review.setText(req.getParameter("text"));
         review.setGrade(Integer.parseInt(req.getParameter("grade")));
-        repository.addReview(review);
+        try {
+            repository.addReview(review);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new ServletException("DB Connection problem.");
+        }
         resp.sendRedirect("/allreviews");
     }
 }

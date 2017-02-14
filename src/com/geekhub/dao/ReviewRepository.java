@@ -15,23 +15,18 @@ public class ReviewRepository {
         this.dataSource = dataSource;
     }
 
-    public void addReview(Review review) {
+    public void addReview(Review review) throws SQLException {
         String sql = "INSERT INTO reviews VALUES (DEFAULT, ?, ?, ?, DEFAULT)";
-        try {
             PreparedStatement preparedStatement = dataSource.getConnection().prepareStatement(sql);
             preparedStatement.setString(1, review.getAuthorName());
             preparedStatement.setString(2, review.getText());
             preparedStatement.setInt(3, review.getGrade());
             preparedStatement.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
     }
 
-    public List<Review> getAllReviews() {
+    public List<Review> getAllReviews() throws SQLException {
         List<Review> reviews = new ArrayList<>();
         String sql = "SELECT `date`, `name`, `grade` FROM reviews";
-        try {
             Statement statement = dataSource.getConnection().createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
             while (resultSet.next()) {
@@ -41,9 +36,6 @@ public class ReviewRepository {
                 review.setGrade(resultSet.getInt("grade"));
                 reviews.add(review);
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
         return reviews;
     }
 }

@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 
 @WebServlet("/allreviews")
@@ -23,7 +24,13 @@ public class AllReviewsController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<Review> reviews = repository.getAllReviews();
+        List<Review> reviews;
+        try {
+            reviews = repository.getAllReviews();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new ServletException("DB Connection problem.");
+        }
         req.setAttribute("reviews", reviews);
         req.getRequestDispatcher("viewall.jsp").forward(req, resp);
     }
