@@ -1,8 +1,8 @@
 package com.geekhub.dao;
 
 import com.geekhub.model.Review;
-import com.geekhub.util.DataSource;
 
+import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
