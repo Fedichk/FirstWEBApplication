@@ -19,7 +19,7 @@ public class ReviewListener implements ServletContextListener {
         DataSource dataSource = null;
         try {
             Context ctx = new InitialContext();
-             dataSource = (DataSource) ctx.lookup("java:comp/env/jdbc/reviews");
+            dataSource = (DataSource) ctx.lookup("java:comp/env/jdbc/reviews");
         } catch (NamingException e) {
             e.printStackTrace();
         }
