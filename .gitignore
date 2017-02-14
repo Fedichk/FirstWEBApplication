@@ -53,3 +53,4 @@ out/artifacts/GuestBook_war_exploded/WEB-INF/classes/com/geekhub/util/
 out/artifacts/GuestBook_war_exploded/WEB-INF/lib/commons-dbcp-1.4.jar
 out/artifacts/GuestBook_war_exploded/WEB-INF/lib/commons-pool-1.6.jar
 out/production/GuestBook/com/geekhub/listiner/
+/.idea/
