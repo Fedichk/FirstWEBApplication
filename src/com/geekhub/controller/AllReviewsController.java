@@ -25,12 +25,17 @@ public class AllReviewsController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<Review> reviews;
+        int pages;
+        int counter = Integer.parseInt(req.getParameter("page"));
         try {
-            reviews = repository.getAllReviews();
+            pages = repository.getPages();
+            reviews = repository.getAllReviews(counter - 1);
         } catch (SQLException e) {
             e.printStackTrace();
-            throw new ServletException("DB Connection problem.");
+            throw new ServletException("DB Connection problem.", e);
         }
+        req.setAttribute("pages", pages);
+        req.setAttribute("counter", counter);
         req.setAttribute("reviews", reviews);
         req.getRequestDispatcher("viewall.jsp").forward(req, resp);
     }

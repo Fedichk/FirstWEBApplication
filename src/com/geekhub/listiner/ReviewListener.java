@@ -25,6 +25,7 @@ public class ReviewListener implements ServletContextListener {
             dataSource.setUrl(properties.getProperty("url"));
             dataSource.setUsername(properties.getProperty("user"));
             dataSource.setPassword(properties.getProperty("password"));
+            dataSource.setMaxActive(1000);
         } catch (IOException e) {
             e.printStackTrace();
             throw new RuntimeException("Comment", e);

@@ -30,8 +30,8 @@ public class NewReviewController extends HttpServlet {
             repository.addReview(review);
         } catch (SQLException e) {
             e.printStackTrace();
-            throw new ServletException("DB Connection problem.");
+            throw new ServletException("DB Connection problem.", e);
         }
-        resp.sendRedirect("/allreviews");
+        resp.sendRedirect("/allreviews?page=1");
     }
 }
