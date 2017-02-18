@@ -2,40 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7757e22c-0b05-4df7-89a5-644d7306f371" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/GuestBook_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/f6957a75-97d9-4f8e-bb32-a0dd54cf336f.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/f6957a75-97d9-4f8e-bb32-a0dd54cf336f/storage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/commons_dbcp_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/commons_pool_1_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javax_servlet_api_3_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jstl_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_40_bin.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GuestBook_war_exploded/WEB-INF/classes/com/geekhub/controller/AllReviewsController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GuestBook_war_exploded/WEB-INF/classes/com/geekhub/controller/NewReviewController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GuestBook_war_exploded/WEB-INF/classes/com/geekhub/dao/ReviewRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GuestBook_war_exploded/WEB-INF/classes/com/geekhub/model/Review.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GuestBook_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GuestBook_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.40-bin.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GuestBook_war_exploded/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GuestBook_war_exploded/index.jsp" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/geekhub/util/PageCalculator.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GuestBook_war_exploded/newreview.jsp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GuestBook_war_exploded/viewall.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GuestBook/com/geekhub/controller/AllReviewsController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GuestBook/com/geekhub/controller/NewReviewController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GuestBook/com/geekhub/dao/ReviewRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GuestBook/com/geekhub/model/Review.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/newreview.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/view/newreview.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/viewall.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/view/viewall.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GuestBook_war_exploded/WEB-INF/classes/com/geekhub/controller/AllReviewsController.class" afterPath="$PROJECT_DIR$/out/artifacts/GuestBook_war_exploded/WEB-INF/classes/com/geekhub/controller/AllReviewsController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GuestBook_war_exploded/WEB-INF/classes/com/geekhub/dao/ReviewRepository.class" afterPath="$PROJECT_DIR$/out/artifacts/GuestBook_war_exploded/WEB-INF/classes/com/geekhub/dao/ReviewRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GuestBook/com/geekhub/controller/AllReviewsController.class" afterPath="$PROJECT_DIR$/out/production/GuestBook/com/geekhub/controller/AllReviewsController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GuestBook/com/geekhub/dao/ReviewRepository.class" afterPath="$PROJECT_DIR$/out/production/GuestBook/com/geekhub/dao/ReviewRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GuestBook_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/GuestBook_war_exploded/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/geekhub/controller/AllReviewsController.java" afterPath="$PROJECT_DIR$/src/com/geekhub/controller/AllReviewsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/geekhub/controller/NewReviewController.java" afterPath="$PROJECT_DIR$/src/com/geekhub/controller/NewReviewController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/geekhub/dao/ReviewRepository.java" afterPath="$PROJECT_DIR$/src/com/geekhub/dao/ReviewRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/geekhub/listiner/ReviewListener.java" afterPath="$PROJECT_DIR$/src/com/geekhub/listiner/ReviewListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/viewall.jsp" afterPath="$PROJECT_DIR$/web/viewall.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,15 +66,15 @@
       <file leaf-file-name="ReviewRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/geekhub/dao/ReviewRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="382">
+              <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
               <folding>
-                <marker date="1487423782299" expanded="true" signature="541:595" ph="INSERT INTO reviews... " />
-                <marker date="1487423782299" expanded="true" signature="1100:1143" ph="SELECT `date... reviews" />
-                <marker date="1487423782299" expanded="true" signature="1100:1164" ph="SELECT `date... reviews" />
-                <marker date="1487423782299" expanded="true" signature="1100:1170" ph="SELECT `date... reviews" />
-                <marker date="1487423782299" expanded="true" signature="1100:1186" ph="SELECT `date... reviews" />
-                <marker date="1487423782299" expanded="true" signature="1760:1800" ph="SELECT COUNT... reviews" />
+                <marker date="1487445332560" expanded="true" signature="581:635" ph="INSERT INTO reviews... " />
+                <marker date="1487445332560" expanded="true" signature="1150:1193" ph="SELECT `date... reviews" />
+                <marker date="1487445332560" expanded="true" signature="1150:1214" ph="SELECT `date... reviews" />
+                <marker date="1487445332560" expanded="true" signature="1150:1220" ph="SELECT `date... reviews" />
+                <marker date="1487445332560" expanded="true" signature="1150:1236" ph="SELECT `date... reviews" />
+                <marker date="1487445332560" expanded="true" signature="1854:1894" ph="SELECT COUNT... reviews" />
               </folding>
             </state>
           </provider>
@@ -103,13 +83,9 @@
       <file leaf-file-name="ReviewListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/geekhub/listiner/ReviewListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
+            <state relative-caret-position="332">
               <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1568#1569#0" expanded="false" />
-                <element signature="e#1615#1616#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,9 +95,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,20 +113,28 @@
       <file leaf-file-name="AllReviewsController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/geekhub/controller/AllReviewsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="31" lean-forward="true" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewall.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/viewall.jsp">
+      <file leaf-file-name="PageCalculator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/geekhub/util/PageCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="40" column="57" lean-forward="true" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewall.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/viewall.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="507">
+              <caret line="46" column="7" lean-forward="true" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -161,8 +143,18 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            <state relative-caret-position="150">
+              <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newreview.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/newreview.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -171,11 +163,9 @@
       <file leaf-file-name="NewReviewController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/geekhub/controller/NewReviewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state relative-caret-position="457">
+              <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -202,7 +192,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/geekhub/model/Review.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/newreview.jsp" />
         <option value="$PROJECT_DIR$/src/com/geekhub/util/DbUtil.java" />
         <option value="$PROJECT_DIR$/src/com/geekhub/controller/ReviewerrorHandler.java" />
         <option value="$PROJECT_DIR$/web/META-INF/context.xml" />
@@ -213,9 +202,11 @@
         <option value="$PROJECT_DIR$/src/com/geekhub/controller/GuestBookErrorHandler.java" />
         <option value="$PROJECT_DIR$/src/com/geekhub/listiner/ReviewListener.java" />
         <option value="$PROJECT_DIR$/src/com/geekhub/controller/NewReviewController.java" />
-        <option value="$PROJECT_DIR$/src/com/geekhub/dao/ReviewRepository.java" />
-        <option value="$PROJECT_DIR$/src/com/geekhub/controller/AllReviewsController.java" />
         <option value="$PROJECT_DIR$/web/viewall.jsp" />
+        <option value="$PROJECT_DIR$/web/newreview.jsp" />
+        <option value="$PROJECT_DIR$/src/com/geekhub/controller/AllReviewsController.java" />
+        <option value="$PROJECT_DIR$/src/com/geekhub/util/PageCalculator.java" />
+        <option value="$PROJECT_DIR$/src/com/geekhub/dao/ReviewRepository.java" />
       </list>
     </option>
   </component>
@@ -280,6 +271,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GuestBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GuestBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GuestBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GuestBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GuestBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GuestBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -299,28 +344,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="geekhub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GuestBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GuestBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geekhub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -342,15 +365,16 @@
     <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Fedor\IdeaProjects\GuestBook\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Fedor\IdeaProjects\GuestBook\web\WEB-INF\lib" />
       <recent name="C:\Users\Fedor\IdeaProjects\GuestBook\src" />
       <recent name="C:\Users\Fedor\IdeaProjects\GuestBook\web" />
       <recent name="C:\Users\Fedor\IdeaProjects\GuestBook\web\WEB-INF" />
       <recent name="C:\Users\Fedor\IdeaProjects\GuestBook\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Fedor\IdeaProjects\GuestBook\web\WEB-INF\view" />
+      <recent name="C:\Users\Fedor\IdeaProjects\GuestBook\src" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.GuestBook">
@@ -853,7 +877,7 @@
       <workItem from="1487401768644" duration="4610000" />
       <workItem from="1487415852984" duration="2814000" />
       <workItem from="1487420469250" duration="3664000" />
-      <workItem from="1487425726492" duration="467000" />
+      <workItem from="1487425726492" duration="5174000" />
     </task>
     <task id="LOCAL-00001" summary="Guest book">
       <created>1487002980027</created>
@@ -953,11 +977,25 @@
       <option name="project" value="LOCAL" />
       <updated>1487081250599</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Guest book">
+      <created>1487426203401</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1487426203401</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Guest book">
+      <created>1487444282356</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1487444282356</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61744000" />
+    <option name="totallyTimeSpent" value="66451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1848" height="1102" extended-state="6" />
@@ -1057,7 +1095,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/geekhub/util/DataSource.java" />
     <entry file="file://$PROJECT_DIR$/src/db.properties" />
     <entry file="file://$PROJECT_DIR$/src/com/geekhub/model/Review.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1083,12 +1120,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1487423782299" expanded="true" signature="541:595" ph="INSERT INTO reviews... " />
-            <marker date="1487423782299" expanded="true" signature="1100:1143" ph="SELECT `date... reviews" />
-            <marker date="1487423782299" expanded="true" signature="1100:1164" ph="SELECT `date... reviews" />
-            <marker date="1487423782299" expanded="true" signature="1100:1170" ph="SELECT `date... reviews" />
-            <marker date="1487423782299" expanded="true" signature="1100:1186" ph="SELECT `date... reviews" />
-            <marker date="1487423782299" expanded="true" signature="1760:1800" ph="SELECT COUNT... reviews" />
+            <marker date="1487445332560" expanded="true" signature="581:635" ph="INSERT INTO reviews... " />
+            <marker date="1487445332560" expanded="true" signature="1150:1193" ph="SELECT `date... reviews" />
+            <marker date="1487445332560" expanded="true" signature="1150:1214" ph="SELECT `date... reviews" />
+            <marker date="1487445332560" expanded="true" signature="1150:1220" ph="SELECT `date... reviews" />
+            <marker date="1487445332560" expanded="true" signature="1150:1236" ph="SELECT `date... reviews" />
+            <marker date="1487445332560" expanded="true" signature="1854:1894" ph="SELECT COUNT... reviews" />
           </folding>
         </state>
       </provider>
@@ -1097,11 +1134,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1568#1569#0" expanded="false" />
-            <element signature="e#1615#1616#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1109,9 +1142,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,20 +1150,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/newreview.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/newreview.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/viewall.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/viewall.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
@@ -1166,12 +1195,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1487423782299" expanded="true" signature="541:595" ph="INSERT INTO reviews... " />
-            <marker date="1487423782299" expanded="true" signature="1100:1143" ph="SELECT `date... reviews" />
-            <marker date="1487423782299" expanded="true" signature="1100:1164" ph="SELECT `date... reviews" />
-            <marker date="1487423782299" expanded="true" signature="1100:1170" ph="SELECT `date... reviews" />
-            <marker date="1487423782299" expanded="true" signature="1100:1186" ph="SELECT `date... reviews" />
-            <marker date="1487423782299" expanded="true" signature="1760:1800" ph="SELECT COUNT... reviews" />
+            <marker date="1487445332560" expanded="true" signature="581:635" ph="INSERT INTO reviews... " />
+            <marker date="1487445332560" expanded="true" signature="1150:1193" ph="SELECT `date... reviews" />
+            <marker date="1487445332560" expanded="true" signature="1150:1214" ph="SELECT `date... reviews" />
+            <marker date="1487445332560" expanded="true" signature="1150:1220" ph="SELECT `date... reviews" />
+            <marker date="1487445332560" expanded="true" signature="1150:1236" ph="SELECT `date... reviews" />
+            <marker date="1487445332560" expanded="true" signature="1854:1894" ph="SELECT COUNT... reviews" />
           </folding>
         </state>
       </provider>
@@ -1180,11 +1209,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1568#1569#0" expanded="false" />
-            <element signature="e#1615#1616#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1192,9 +1217,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1202,20 +1225,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/newreview.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/newreview.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/viewall.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/viewall.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
@@ -1249,12 +1270,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1487423782299" expanded="true" signature="541:595" ph="INSERT INTO reviews... " />
-            <marker date="1487423782299" expanded="true" signature="1100:1143" ph="SELECT `date... reviews" />
-            <marker date="1487423782299" expanded="true" signature="1100:1164" ph="SELECT `date... reviews" />
-            <marker date="1487423782299" expanded="true" signature="1100:1170" ph="SELECT `date... reviews" />
-            <marker date="1487423782299" expanded="true" signature="1100:1186" ph="SELECT `date... reviews" />
-            <marker date="1487423782299" expanded="true" signature="1760:1800" ph="SELECT COUNT... reviews" />
+            <marker date="1487445332560" expanded="true" signature="581:635" ph="INSERT INTO reviews... " />
+            <marker date="1487445332560" expanded="true" signature="1150:1193" ph="SELECT `date... reviews" />
+            <marker date="1487445332560" expanded="true" signature="1150:1214" ph="SELECT `date... reviews" />
+            <marker date="1487445332560" expanded="true" signature="1150:1220" ph="SELECT `date... reviews" />
+            <marker date="1487445332560" expanded="true" signature="1150:1236" ph="SELECT `date... reviews" />
+            <marker date="1487445332560" expanded="true" signature="1854:1894" ph="SELECT COUNT... reviews" />
           </folding>
         </state>
       </provider>
@@ -1263,11 +1284,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1568#1569#0" expanded="false" />
-            <element signature="e#1615#1616#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1275,9 +1292,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1285,9 +1300,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1306,25 +1319,6 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/91f618c3/f6957a75-97d9-4f8e-bb32-a0dd54cf336f/geekhub.user">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/newreview.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/91f618c3/f6957a75-97d9-4f8e-bb32-a0dd54cf336f/geekhub.reviews">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1361,14 +1355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1390,75 +1376,102 @@
         </state>
       </provider>
     </entry>
+    <entry file="dbDummy://dbtable:/91f618c3/f6957a75-97d9-4f8e-bb32-a0dd54cf336f/geekhub.reviews">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/geekhub/controller/GuestBookErrorHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/geekhub/listiner/ReviewListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        <state relative-caret-position="150">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/geekhub/controller/NewReviewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="457">
+          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/geekhub/listiner/ReviewListener.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/newreview.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1568#1569#0" expanded="false" />
-            <element signature="e#1615#1616#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="350">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/viewall.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="46" column="7" lean-forward="true" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/geekhub/controller/AllReviewsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="31" lean-forward="true" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/geekhub/dao/ReviewRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="382">
+          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
           <folding>
-            <marker date="1487423782299" expanded="true" signature="541:595" ph="INSERT INTO reviews... " />
-            <marker date="1487423782299" expanded="true" signature="1100:1143" ph="SELECT `date... reviews" />
-            <marker date="1487423782299" expanded="true" signature="1100:1164" ph="SELECT `date... reviews" />
-            <marker date="1487423782299" expanded="true" signature="1100:1170" ph="SELECT `date... reviews" />
-            <marker date="1487423782299" expanded="true" signature="1100:1186" ph="SELECT `date... reviews" />
-            <marker date="1487423782299" expanded="true" signature="1760:1800" ph="SELECT COUNT... reviews" />
+            <marker date="1487445332560" expanded="true" signature="581:635" ph="INSERT INTO reviews... " />
+            <marker date="1487445332560" expanded="true" signature="1150:1193" ph="SELECT `date... reviews" />
+            <marker date="1487445332560" expanded="true" signature="1150:1214" ph="SELECT `date... reviews" />
+            <marker date="1487445332560" expanded="true" signature="1150:1220" ph="SELECT `date... reviews" />
+            <marker date="1487445332560" expanded="true" signature="1150:1236" ph="SELECT `date... reviews" />
+            <marker date="1487445332560" expanded="true" signature="1854:1894" ph="SELECT COUNT... reviews" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/viewall.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/geekhub/util/PageCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="40" column="57" lean-forward="true" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

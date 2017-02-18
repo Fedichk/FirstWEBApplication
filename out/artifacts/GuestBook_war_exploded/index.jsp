@@ -4,6 +4,6 @@
     <title>Create review</title>
 </head>
 <body>
-<a href="newreview.jsp">Create a review</a>
+<a href="WEB-INF/view/newreview.jsp">Create a review</a>
 </body>
 </html>

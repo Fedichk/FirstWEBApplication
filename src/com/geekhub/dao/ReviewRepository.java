@@ -1,6 +1,7 @@
 package com.geekhub.dao;
 
 import com.geekhub.model.Review;
+import com.geekhub.util.PageCalculator;
 import org.apache.commons.dbcp.BasicDataSource;
 
 import java.sql.PreparedStatement;
@@ -28,10 +29,9 @@ public class ReviewRepository {
         }
     }
 
-    public List<Review> getAllReviews(int page, int offset) throws SQLException {
+    public List<Review> getAllReviews(int offset, int limit) throws SQLException {
         List<Review> reviews = new ArrayList<>();
-        int start = page * offset;
-        String sql = "SELECT `date`, `name`, `grade` FROM reviews ORDER BY `date` DESC LIMIT " + start + "," + offset;
+        String sql = "SELECT `date`, `name`, `grade` FROM reviews ORDER BY `date` DESC LIMIT " + offset + "," + limit;
         try (Statement statement = dataSource.getConnection().createStatement()) {
             ResultSet resultSet = statement.executeQuery(sql);
             while (resultSet.next()) {
@@ -51,17 +51,7 @@ public class ReviewRepository {
             ResultSet resultSet = statement.executeQuery(sql);
             resultSet.next();
             int count = resultSet.getInt("rowcount");
-            return calculatePages(count, offset);
+            return PageCalculator.calculatePages(count, offset);
         }
-    }
-
-    private int calculatePages(int count, int offset) {
-        int pages;
-        if (((count % offset) == 0) || (count > 0 && count < offset)) {
-            pages = count / offset;
-        } else {
-            pages = count / offset + 1;
-        }
-        return pages;
     }
 }
