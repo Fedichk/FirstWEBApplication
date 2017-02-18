@@ -25,11 +25,12 @@ public class AllReviewsController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<Review> reviews;
+        int offset = 5;
         int pages;
         int counter = Integer.parseInt(req.getParameter("page"));
         try {
-            pages = repository.getPages();
-            reviews = repository.getAllReviews(counter - 1);
+            pages = repository.getPages(offset);
+            reviews = repository.getAllReviews(counter - 1, offset);
         } catch (SQLException e) {
             e.printStackTrace();
             throw new ServletException("DB Connection problem.", e);

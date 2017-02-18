@@ -30,13 +30,13 @@
         </c:url>
         <button><a href="${url}">back</a></button>
     </c:if>
-    <c:forEach begin="0" end="${pages}" var="page">
+    <c:forEach begin="1" end="${pages}" var="page">
         <c:url var="url" value="/allreviews">
-            <c:param name="page" value="${page + 1}"/>
+            <c:param name="page" value="${page}"/>
         </c:url>
-        <button><a href="${url}">${page + 1}</a></button>
+        <button><a href="${url}">${page}</a></button>
     </c:forEach>
-    <c:if test="${counter < pages + 1}">
+    <c:if test="${counter < pages}">
         <c:url var="url" value="/allreviews">
             <c:param name="page" value="${counter + 1}"/>
         </c:url>

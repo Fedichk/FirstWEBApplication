@@ -20,50 +20,47 @@ public class ReviewRepository {
 
     public void addReview(Review review) throws SQLException {
         String sql = "INSERT INTO reviews VALUES (DEFAULT, ?, ?, ?, DEFAULT)";
-        PreparedStatement preparedStatement = dataSource.getConnection().prepareStatement(sql);
-        preparedStatement.setString(1, review.getAuthorName());
-        preparedStatement.setString(2, review.getText());
-        preparedStatement.setInt(3, review.getGrade());
-        preparedStatement.executeUpdate();
-    }
-
-    public List<Review> getAllReviews(int counter) throws SQLException {
-        List<Review> reviews = new ArrayList<>();
-        int start = counter * 5;
-        String sql = "SELECT `date`, `name`, `grade` FROM reviews ORDER BY `date` DESC LIMIT " + start + ",5";
-        Statement statement = dataSource.getConnection().createStatement();
-        ResultSet resultSet = statement.executeQuery(sql);
-        while (resultSet.next()) {
-            Review review = new Review();
-            review.setDate(resultSet.getDate("date").toLocalDate());
-            review.setAuthorName(resultSet.getString("name"));
-            review.setGrade(resultSet.getInt("grade"));
-            reviews.add(review);
+        try (PreparedStatement preparedStatement = dataSource.getConnection().prepareStatement(sql)) {
+            preparedStatement.setString(1, review.getAuthorName());
+            preparedStatement.setString(2, review.getText());
+            preparedStatement.setInt(3, review.getGrade());
+            preparedStatement.executeUpdate();
         }
-        statement.close();
-        return reviews;
     }
 
-    public int getPages() throws SQLException {
+    public List<Review> getAllReviews(int page, int offset) throws SQLException {
+        List<Review> reviews = new ArrayList<>();
+        int start = page * offset;
+        String sql = "SELECT `date`, `name`, `grade` FROM reviews ORDER BY `date` DESC LIMIT " + start + "," + offset;
+        try (Statement statement = dataSource.getConnection().createStatement()) {
+            ResultSet resultSet = statement.executeQuery(sql);
+            while (resultSet.next()) {
+                Review review = new Review();
+                review.setDate(resultSet.getDate("date").toLocalDate());
+                review.setAuthorName(resultSet.getString("name"));
+                review.setGrade(resultSet.getInt("grade"));
+                reviews.add(review);
+            }
+            return reviews;
+        }
+    }
+
+    public int getPages(int offset) throws SQLException {
         String sql = "SELECT COUNT(*) AS rowcount FROM reviews";
-        Statement statement = dataSource.getConnection().createStatement();
-        ResultSet resultSet = statement.executeQuery(sql);
-        resultSet.next();
-        int count = resultSet.getInt("rowcount");
-        statement.close();
-        return calculatePages(count);
+        try (Statement statement = dataSource.getConnection().createStatement()) {
+            ResultSet resultSet = statement.executeQuery(sql);
+            resultSet.next();
+            int count = resultSet.getInt("rowcount");
+            return calculatePages(count, offset);
+        }
     }
 
-    private int calculatePages(int count) {
-        int pages = 0;
-        if (((count % 5) == 0) || (count > 0 && count < 5)) {
-            for (int i = 0; i < count / 5; i++) {
-                pages = i;
-            }
+    private int calculatePages(int count, int offset) {
+        int pages;
+        if (((count % offset) == 0) || (count > 0 && count < offset)) {
+            pages = count / offset;
         } else {
-            for (int i = 0; i < (count / 5 + 1); i++) {
-                pages = i;
-            }
+            pages = count / offset + 1;
         }
         return pages;
     }
